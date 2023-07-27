@@ -40,11 +40,11 @@ import miowad.nn as nn
 
 # Create a neural network with 2 hidden layers
 model = nn.Sequential([
-    nn.Linear(1, 10),
+    nn.Linear(2, 10),
     nn.Sigmoid(),
     nn.Linear(10, 10),
     nn.Sigmoid(),
-    nn.Linear(10, 1),
+    nn.Linear(10, 2),
 ])
 
 # Initialize model weights
